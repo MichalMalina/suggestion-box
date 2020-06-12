@@ -139,7 +139,7 @@ app.get('*', (req, res) =>
 );
 
 
-const url = process.env.MONGO_URL || 'mongodb://localhost/suggestion-box';
+const url = process.env.MONGO_URL ;
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
     .then(async () => {
         await Db.populateDb();
