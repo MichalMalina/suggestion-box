@@ -20,7 +20,6 @@ class App extends Component {
         this.Auth = new AuthService(`${this.API_URL}/users/authenticate`);
         this.state = {
             suggestions: [],
-            signatureErr:false,
             typoErr:false,
             logErr:false
         };
@@ -102,11 +101,11 @@ class App extends Component {
                 const data = await response.json();
                 this.getData();
                 console.log("Printing the response:", data);
-                this.setState({signatureErr:false});
+                
             }
             else {
                 console.log("You already submitted a signature for this suggestion");
-                this.setState({signatureErr:true});
+              
             }
         }
         else {console.log("Wrong username"); this.setState({typoErr:true});}

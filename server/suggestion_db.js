@@ -118,10 +118,10 @@ class Suggestion_db {
               try {
                   var user1 = new this.userModel(
                       {
-                          username: "user2",
+                          username: "user3",
                           password: "123",
                           admin: true,
-                          fullname: "John Smith"
+                          fullname: "Kevin"
                       });
                   console.log(user1);
                   user1.save(function (err, user1) {

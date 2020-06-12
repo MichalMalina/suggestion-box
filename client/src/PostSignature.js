@@ -36,7 +36,6 @@ class PostSignature extends  Component{
 
     render() {
         let typoErr = this.props.typo ? <p>Wrong username</p> : <p></p>;
-        let duplicateErr = this.props.error ? <p>Signature already added</p>:<p></p>;
         let showErr = this.state.theError ?
             <p>Must be logged in to submit signature</p> : <p></p>;
 
