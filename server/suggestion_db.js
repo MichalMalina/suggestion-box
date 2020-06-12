@@ -118,8 +118,8 @@ class Suggestion_db {
               try {
                   var user1 = new this.userModel(
                       {
-                          username: "user1",
-                          password: "mama",
+                          username: "user2",
+                          password: "123",
                           admin: true,
                           fullname: "John Smith"
                       });

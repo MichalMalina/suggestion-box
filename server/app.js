@@ -142,8 +142,8 @@ app.get('*', (req, res) =>
 const url = process.env.MONGO_URL ;
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
     .then(async () => {
-        await Db.populateDb();
-       await Db.populateDb2();
+     //   await Db.populateDb();
+     // await Db.populateDb2();
         await app.listen(port); // Start the API
         console.log(`Question API running on port ${port}!`);
     })
