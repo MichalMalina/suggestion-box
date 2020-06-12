@@ -12,8 +12,8 @@ import PostSignature from "./PostSignature";
 
 
 class App extends Component {
-    API_URL = 'http://localhost:8080/api';
-
+    API_URL = process.env.REACT_APP_API_URL;
+   
     constructor(props) {
         super(props);
         // Initialize the auth service with the path of the API authentication route.
