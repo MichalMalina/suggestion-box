@@ -4,10 +4,10 @@
 users : 
 
 username >user1,
-passwrod > mama
+password > mama
 
 username > user2,
-passwrord > 123
+password > 123
 
 
 npm install
