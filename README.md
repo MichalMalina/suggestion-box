@@ -1,14 +1,8 @@
 "# suggestion-box" 
 
-
-users : 
-
-username >user1,
-password > mama
-
+test user : 
 username > user2,
 password > 123
-
 
 npm install
 
